@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{base}">
+
+<head>
+    <title>Page 3</title>
+</head>
+<th:block layout:fragment="breadcrumb">
+    <li class="breadcrumb-item">Page 3</li>
+</th:block>
+<div layout:fragment="page_content" id="page_content">
+    <h3>Page 3</h3>
+
+    <div class="alert alert-info" style="display: none;" id="js-content">
+    </div>
+    <a th:href="@{/page2}">Go to page 2</a>
+    <a th:href="@{/page1}">Go to page 1</a>
+
+
+
+
+</div>
+
